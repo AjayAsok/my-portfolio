@@ -1,4 +1,4 @@
-import React, { Component, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.scss";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -17,46 +17,6 @@ const App = () => {
     loadSharedData();
   }, [])
 
-  // constructor(props) {
-  //   super();
-  //   this.state = {
-  //     foo: "bar",
-  //     resumeData: {},
-  //     sharedData: {},
-  //   };
-  // }
-
-  // applyPickedLanguage(pickedLanguage, oppositeLangIconId) {
-  //   this.swapCurrentlyActiveLanguage(oppositeLangIconId);
-  //   document.documentElement.lang = pickedLanguage;
-  //   var resumePath =
-  //     document.documentElement.lang === window.$primaryLanguage
-  //       ? `res_primaryLanguage.json`
-  //       : `res_secondaryLanguage.json`;
-
-  // }
-
-  // swapCurrentlyActiveLanguage(oppositeLangIconId) {
-  //   var pickedLangIconId =
-  //     oppositeLangIconId === window.$primaryLanguageIconId
-  //       ? window.$secondaryLanguageIconId
-  //       : window.$primaryLanguageIconId;
-  //   document
-  //     .getElementById(oppositeLangIconId)
-  //     .removeAttribute("filter", "brightness(40%)");
-  //   document
-  //     .getElementById(pickedLangIconId)
-  //     .setAttribute("filter", "brightness(40%)");
-  // }
-
-  // componentDidMount() {
-  //   this.loadSharedData();
-  //   // this.applyPickedLanguage(
-  //   //   window.$primaryLanguage,
-  //   //   window.$secondaryLanguageIconId
-  //   // );
-  //   this.loadResumeFromPath(`res_primaryLanguage.json`);
-  // }
   const loadResumeFromPath = (path) => {
     fetch(path)
       .then((response) => {
@@ -67,19 +27,6 @@ const App = () => {
       })
 
   }
-  // loadResumeFromPath(path) {
-  //   $.ajax({
-  //     url: path,
-  //     dataType: "json",
-  //     cache: false,
-  //     success: function (data) {
-  //       this.setState({ resumeData: data });
-  //     }.bind(this),
-  //     error: function (xhr, status, err) {
-  //       alert(err);
-  //     },
-  //   });
-  // }
 
   const loadSharedData = () => {
     fetch(`portfolio_shared_data.json`)
@@ -91,21 +38,6 @@ const App = () => {
       })
 
   }
-
-  // const loadSharedData = () => {
-  //   $.ajax({
-  //     url: `portfolio_shared_data.json`,
-  //     dataType: "json",
-  //     cache: false,
-  //     success: function (data) {
-  //       this.setState({ sharedData: data });
-  //       document.title = `${sharedData.basic_info.name}`;
-  //     }.bind(this),
-  //     error: function (xhr, status, err) {
-  //       alert(err);
-  //     },
-  //   });
-  // }
 
 
   return (

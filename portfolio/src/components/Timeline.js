@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -7,7 +7,6 @@ import "react-vertical-timeline-component/style.min.css";
 import Badge from "react-bootstrap/Badge";
 
 const Timeline = (props) => {
-  // render() {
   if (props.resumeExperience && props.resumeBasicInfo) {
     var sectionName = props.resumeBasicInfo.section_name.experience;
     var work = props.resumeExperience.map(function (work, i) {
@@ -91,6 +90,5 @@ const Timeline = (props) => {
     </section>
   );
 }
-// }
 
 export default Timeline;

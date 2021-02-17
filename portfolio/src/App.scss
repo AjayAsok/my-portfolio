@@ -14,6 +14,7 @@ html {
 	align-items: center;
 	justify-content: center;
 	background: #dad7b8;
+	margin: 0px !important;
 }
 
 .title-container {
@@ -109,7 +110,7 @@ header h1 {
 }
 
 #about {
-	background: black;
+	background: #dad7b8;
 	overflow: hidden;
 }
 
@@ -170,15 +171,15 @@ header h1 {
 	color: black;
 	text-align: center;
 }
-#about-me div:hover {
-	-webkit-transform: scale(1.001);
-	-moz-transform: scale(1.001);
-	transform: scale(1.001);
-	z-index: 10;
-	-webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
-	-moz-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
-	box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
-}
+// #about-me div:hover {
+// 	-webkit-transform: scale(1.001);
+// 	-moz-transform: scale(1.001);
+// 	transform: scale(1.001);
+// 	z-index: 10;
+// 	-webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+// 	-moz-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+// 	box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+// }
 
 .polaroid img {
 	display: block;
