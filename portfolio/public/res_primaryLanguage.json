@@ -1,118 +1,176 @@
 {
-    "basic_info": {
-      "description_header": "Hi",
-      "description": "👋 I'm Ajay. Fictional person for preview purposes :) I'm working with newest front-end frameworks like Angular, React and Vue. What you are seeing now is portfolio template from Dorota1997. If you like this portfolio template, make sure to ⭐ the repository to make it more recognizable for other users. Thank you 💜",
-      "section_name": {
-        "about": "About me",
-        "projects": "Projects",
-        "skills": "Skills",
-        "experience": "Experience"
-      }
-    },
-    "projects": [
-      {
-        "title": "Animal Shelter",
-        "startDate": "2020",
-        "description": "The most expanded application I had opportunity to work with. I've learned many technologies and my code was reviewed by awesome curator. Application handles all adoption processess and allows to store all evidence on adopting animals from animal shelter.",
-        "images": [
-          "images/portfolio/animal-shelter/p1.jpg",
-          "images/portfolio/animal-shelter/p2.jpg"
-        ],
-        "url": "",
-        "technologies": [
-          {
-            "class": "devicon-angularjs-plain",
-            "name": "Angular"
-          },
-          {
-            "class": "devicon-typescript-plain",
-            "name": "TypeScript"
-          },
-          {
-            "class": "devicon-csharp-plain",
-            "name": "C#"
-          }
-        ]
-      },
-      {
-        "title": "Photography",
-        "startDate": "2018",
-        "description": "Personal project for study subject. I was responsible for testing photography application that optimizes images with popular algorithms used by graphic editors like Pixlr or Adobe Photoshop. I've earned A grade :)",
-        "images": [
-          "images/portfolio/photography/p1.jpg",
-          "images/portfolio/photography/p2.jpg"
-        ],
-        "url": "https://github.com",
-        "technologies": [
-          {
-            "class": "devicon-react-original",
-            "name": "React"
-          },
-          {
-            "class": "devicon-javascript-plain",
-            "name": "JavaScript"
-          }
-        ]
-      },
-      {
-        "title": "3D Object Viewer",
-        "startDate": "2015",
-        "description": "One of the first apps I was working on my internship. I had to develop front-end implementation for app that shows 3D models of known buildings. This was also my first project in Angular framework. I've learned a lot!",
-        "images": [
-          "images/portfolio/adventure/p1.jpg",
-          "images/portfolio/adventure/p2.jpg"
-        ],
-        "url": "https://github.com",
-        "technologies": [
-          {
-            "class": "devicon-angularjs-plain",
-            "name": "Angular"
-          },
-          {
-            "class": "devicon-typescript-plain",
-            "name": "TypeScript"
-          },
-          {
-            "class": "devicon-csharp-plain",
-            "name": "C#"
-          }
-        ]
-      }
+  "basic_info": {
+    "description_header": "Hi, I am Ajay",
+    "description": "Currently persuing Master of Business Administration program with a year-long paid placement.I have got experience with Latest front-end technologies like react, Angular and with the different Java EE frameworks like EJB, Springboot.  Here is my portfolio and you could have a look and it would be great if you could give me feedback on this as feedbacks are always awesome. Regrads,",
+    "professional_desc": [
+      "Full-stack Web application development (front end and back end)",
+      "Agile project development methodology",
+      "Planning and estimation of tasks",
+      "Documentation",
+      "Customer Satisfaction"
     ],
-    "experience": [
-      {
-        "company": "DefOpenSource",
-        "title": "Front-End Developer",
-        "years": "10.2019 - present",
-        "mainTech": [
-          "Angular 8/9/10"
-        ],
-        "technologies": [
-          "REST API",
-          "RxJS",
-          "JavaScript",
-          "Bootstrap",
-          "MDBootstrap",
-          "EF Core",
-          ".NET Core",
-          "SignalR",
-          "Angular Material"
-        ]
-      },
-      {
-        "company": "Serros Solutions",
-        "title": "Intern",
-        "years": "01.2018 - 09.2019",
-        "mainTech": [
-          "Angular 7/8"
-        ],
-        "technologies": [
-          "RxJS",
-          "Django",
-          "PHP",
-          "JavaScript",
-          "DHTMLX Gantt"
-        ]
-      }
-    ]
-  }
+    "section_name": {
+      "about": "About me",
+      "projects": "Professional Experiences",
+      "skills": "Skills",
+      "experience": "Timeline"
+    }
+  },
+  "work": [
+    {
+      "title": "Allianz",
+      "startDate": "2015",
+      "description": "I started my professional career with Allianz. Here I have worked for two internal projects. Both developed using Angular and JavaEE (EJB) framework",
+      "images": [
+        "images/portfolio/allianz/Allianz_logo.png",
+        "images/portfolio/allianz/allianz.png"
+      ],
+      "url": "",
+      "technologies": [
+        {
+          "class": "devicon-angularjs-plain colored",
+          "name": "Angular"
+        },
+        {
+          "class": "devicon-java-plain colored",
+          "name": "Java"
+        },
+        {
+          "class": "devicon-typescript-plain colored",
+          "name": "TypeScript"
+        },
+        {
+          "class": "devicon-html5-plain colored",
+          "name": "HTML5"
+        },
+        {
+          "class": "devicon-bootstrap-plain colored",
+          "name": "Bootstrap"
+        }
+      ]
+    },
+    {
+      "title": "Wipro Technologies",
+      "startDate": "2018",
+      "description": "Worked in Wipro Technologies as a Project Engineer for the customers Nokia and Hewlett Packard. Web applications developed using Java(springboot) and Angular. Also, learned Cytoscape, a Javascript plotting library for graphical representaion. ",
+      "images": [
+        "images/portfolio/wipro/Wipro-logo.png",
+        "images/portfolio/wipro/wipro.jpg"
+      ],
+      "url": "",
+      "technologies": [
+        {
+          "class": "devicon-angularjs-plain colored",
+          "name": "Angular"
+        },
+        {
+          "class": "devicon-java-plain colored",
+          "name": "Java"
+        },
+        {
+          "class": "devicon-typescript-plain colored",
+          "name": "TypeScript"
+        },
+        {
+          "class": "devicon-html5-plain colored",
+          "name": "HTML5"
+        },
+        {
+          "class": "devicon-bootstrap-plain colored",
+          "name": "Bootstrap"
+        },
+        {
+          "class": "devicon-javascript-plain colored",
+          "name": "JavaScript"
+        }
+      ]
+    },
+    {
+      "title": "Learning Projects",
+      "startDate": "2020",
+      "description": "When I am persuing my Masters, I have started learning more javascript libraries and frameworks to understand more about the latest technologies. So, as part of my learning I have developed some application by myself inorder to learn and excel my skills.",
+      "images": [
+        "images/portfolio/learning/learning.png",
+        "images/portfolio/adventure/p2.jpg"
+      ],
+      "url": "https://github.com/AjayAsok/",
+      "technologies": [
+        {
+          "class": "devicon-angularjs-plain colored",
+          "name": "Angular"
+        },
+        {
+          "class": "devicon-typescript-plain colored",
+          "name": "TypeScript"
+        },
+        {
+          "class": "devicon-react-plain colored",
+          "name": "React"
+        },
+        {
+          "class": "devicon-nodejs-plain colored",
+          "name": "Nodejs"
+        }
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "company": "University of Central Lancashire, Preston, United Kingdom",
+      "title": "Master of Business Administration",
+      "years": "01.2020 - present",
+      "icon": "fas fa-book-open experience-icon",
+      "mainTech": [],
+      "technologies": []
+    },
+    {
+      "company": "Wipro Technologies",
+      "title": "Project Engineer",
+      "years": "08.2018 - 01.2020",
+      "icon": "fas fa-phone-laptop experience-icon",
+      "mainTech": [
+        "Angular/ Java"
+      ],
+      "technologies": [
+        "Angular",
+        "Java",
+        "Springboot",
+        "HTML",
+        "CSS",
+        "Typescript",
+        "Cytoscape",
+        "Bootstrap"
+      ]
+    },
+    {
+      "company": "Allianz",
+      "title": "Software Engineer",
+      "years": "8.2015 - 08.2018",
+      "icon": "fas fa-phone-laptop experience-icon",
+      "mainTech": [
+        "Angular/ Java "
+      ],
+      "technologies": [
+        "Angular",
+        "Java",
+        "EJB",
+        "HTML",
+        "CSS",
+        "Typescript",
+        "Bootstrap"
+      ]
+    },
+    {
+      "company": "Mahatma Gandhi University",
+      "title": "Bachelor of Technology in Computer Science",
+      "years": "06.2011 - 07.2015",
+      "icon": "fas fa-book-open experience-icon",
+      "mainTech": [
+        ""
+      ],
+      "technologies": [
+        
+      ]
+    }
+  ]
+}

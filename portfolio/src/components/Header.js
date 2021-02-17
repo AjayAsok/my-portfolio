@@ -1,41 +1,25 @@
-import React, { Component } from "react";
-import { useEffect, useState } from "react";
+import React, { Component, useEffect, useState } from "react";
 import Typical from "react-typical";
 import Switch from "react-switch";
 
-import { SharedData } from "../data/sharedData";
+const Header = (props) => {
+  let titles = [];
+  const [checked, setChecked] = useState(false);
 
-const setTheme = (() => {
-  var dataThemeAttribute = "data-theme";
-  var body = document.body;
-  var newTheme =
-    body.getAttribute(dataThemeAttribute) === "dark" ? "light" : "dark";
-  body.setAttribute(dataThemeAttribute, newTheme);
-})
-
-// const onThemeSwitchChange = ((checked) => {
-//   setChecked(checked);
-//   var dataThemeAttribute = "data-theme";
-//   var body = document.body;
-//   var newTheme =
-//     body.getAttribute(dataThemeAttribute) === "dark" ? "light" : "dark";
-//   body.setAttribute(dataThemeAttribute, newTheme);
-// })
-type Props = {
-  props:SharedData;
-}
-const Header: React.FC<Props> = ({props}) => {
-  console.log("inside")
-  console.log(props)
-  let titles: Array<string>
-  let [checked, setChecked] = useState(true)
+  // constructor() {
+  //   super();
+  //   state = { checked: false };
+  //   onThemeSwitchChange = onThemeSwitchChange.bind(this);
+  // }
   useEffect(() => {
-    setChecked(checked);
+    setChecked({ checked });
+  }, [])
+  const onThemeSwitchChange = () => {
+    // setChecked({ checked });
     // setTheme();
-  }, [checked])
+  }
 
-  // onThemeSwitchChange(checked) {
-  //   this.setState({ checked });
+  // setTheme() {
   //   var dataThemeAttribute = "data-theme";
   //   var body = document.body;
   //   var newTheme =
@@ -43,31 +27,46 @@ const Header: React.FC<Props> = ({props}) => {
   //   body.setAttribute(dataThemeAttribute, newTheme);
   // }
 
-  // setTheme = (() => {
-  //   var dataThemeAttribute = "data-theme";
-  //   var body = document.body;
-  //   var newTheme =
-  //     body.getAttribute(dataThemeAttribute) === "dark" ? "light" : "dark";
-  //   body.setAttribute(dataThemeAttribute, newTheme);
-  // })
 
-  // render() {
-  let name;
-  if (props.basicInfo) {
-    name = props.basicInfo.name;
-    props.basicInfo.titles.map(x => [titles.push(x.toUpperCase())]);
+  if (props.sharedData) {
+    var name = props.sharedData.name;
+    titles = props.sharedData.titles.map(x => [x.toUpperCase(), 2000]).flat();
+    var profilepic = "images/" + props.sharedData.image;
   }
 
   const HeaderTitleTypeAnimation = React.memo(() => {
-    return <Typical className="title-styles" steps={titles} loop={Infinity} />
+    return <Typical className="title-styles" steps={titles} loop={titles.length} />
   }, (props, prevProp) => true);
 
   return (
-    <header id="home" style={{ height: window.innerHeight - 140, display: 'block' }}>
+    <header id="home" style={{ height: window.innerHeight - 100, display: 'contents' }}>
       <div className="row aligner" style={{ height: '100%' }}>
-        <div className="col-md-12">
+      <div className="col-md-4 mb-5 center">
+            <div className="polaroid propic">
+              <span style={{ cursor: "auto" }}>
+                <img style={{ verticalAlign: "middle" }}
+                  height="300px" width="500px"
+                  src={profilepic}
+                  alt="Avatar placeholder"
+                />
+                {/* <Icon
+                  icon={phoneIcon}
+                  style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
+                />
+                <Icon
+                  icon={reactIcon}
+                  style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
+                />
+                <Icon
+                  icon={vueIcon}
+                  style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
+                /> */}
+              </span>
+            </div>
+          </div>
+        <div className="col-md-8">
           <div>
-            <span className="iconify header-icon" data-icon="la:laptop-code" data-inline="false"></span>
+            {/* <span className="iconify header-icon" data-icon="la:laptop-code" data-inline="false"></span> */}
             <br />
             <h1 className="mb-0">
               <Typical steps={[name]} wrapper="p" />
@@ -75,13 +74,10 @@ const Header: React.FC<Props> = ({props}) => {
             <div className="title-container">
               <HeaderTitleTypeAnimation />
             </div>
-            <Switch
+            {/* <span>This is a switch</span> */}
+            {/* <Switch
               checked={checked}
-              onChange={
-                () => {
-                  setChecked(checked)
-                }
-              }
+              onChange={onThemeSwitchChange}
               offColor="#baaa80"
               onColor="#353535"
               className="react-switch mx-auto"
@@ -118,13 +114,13 @@ const Header: React.FC<Props> = ({props}) => {
                 ></span>
               }
               id="icon-switch"
-            />
+            /> */}
           </div>
         </div>
       </div>
     </header>
   );
 }
-// }
+
 
 export default Header;

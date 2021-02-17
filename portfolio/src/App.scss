@@ -13,6 +13,7 @@ html {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	background: #dad7b8;
 }
 
 .title-container {
@@ -89,12 +90,12 @@ header h1 {
 	width: 100%;
 }
 
-.slider-image {
-	border: 5px solid #D7CAAA;
-}
+// .slider-image {
+// 	border: 5px solid #5667e0;
+// }
 
 .slider-tab {
-	background-color: #D7CAAA;
+	background-color: #5667e0;
 	height: 25px;
 }
 
@@ -108,7 +109,7 @@ header h1 {
 }
 
 #about {
-	background: #fff;
+	background: black;
 	overflow: hidden;
 }
 
@@ -169,10 +170,19 @@ header h1 {
 	color: black;
 	text-align: center;
 }
+#about-me div:hover {
+	-webkit-transform: scale(1.001);
+	-moz-transform: scale(1.001);
+	transform: scale(1.001);
+	z-index: 10;
+	-webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+	-moz-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+}
 
 .polaroid img {
 	display: block;
-	max-width: 200px;
+	max-width: 300px;
 }
 
 .polaroid span {
@@ -219,7 +229,7 @@ header h1 {
 }
 
 #resume {
-	background: #efe1bd;
+	background: #8cb361;
 }
 
 .experience-icon {
@@ -341,7 +351,7 @@ header h1 {
 }
 
 #portfolio {
-	background: #efe1bd;
+	background: #8cb361;
 	padding-bottom: 5%;
 }
 

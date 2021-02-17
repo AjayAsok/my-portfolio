@@ -10,19 +10,44 @@
     "social": [
       {
         "name": "github",
-        "url": "https://github.com",
+        "url": "https://github.com/AjayAsok/",
         "class": "fab fa-github"
       },
       {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/ajay-asok",
+        "class": "fab fa-linkedin"
+      },
+      {
+        "name": "facebook",
+        "url": "https://www.facebook.com/ajay.asok.92",
+        "class": "fab fa-facebook"
+      },
+      {
         "name": "instagram",
-        "url": "https://www.instagram.com",
+        "url": "https://www.instagram.com/a__ja__y/",
         "class": "fab fa-instagram"
+      },
+      {
+        "name": "skype",
+        "url": "https://join.skype.com/invite/kINSZY1vNEkg",
+        "class": "fab fa-skype"
+      },
+      {
+        "name": "portfolio project",
+        "url": "https://github.com/AjayAsok/my-portfolio",
+        "class": "fas fa-code-branch"
       }
     ],
     "image": "myProfile.jpg"
   },
   "skills": {
     "icons": [
+      {
+        "name": "Java",
+        "class": "devicon-java-plain",
+        "level": "65"
+      },
       {
         "name": "HTML 5",
         "class": "devicon-html5-plain",
@@ -36,6 +61,11 @@
       {
         "name": "Angular",
         "class": "devicon-angularjs-plain",
+        "level": "80"
+      },
+      {
+        "name": "React",
+        "class": "devicon-react-plain",
         "level": "80"
       },
       {
@@ -57,11 +87,6 @@
         "name": "Bootstrap",
         "class": "devicon-bootstrap-plain",
         "level": "85"
-      },
-      {
-        "name": "C#",
-        "class": "devicon-csharp-plain",
-        "level": "65"
       },
       {
         "name": "MySql",

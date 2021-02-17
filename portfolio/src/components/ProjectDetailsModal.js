@@ -31,7 +31,8 @@ class ProjectDetailsModal extends Component {
         if (this.props.data.images) {
           var img = images.map((elem, i) => {
             return <div key={i} data-src={elem} />;
-          });
+          }
+          );
         }
       }
     }
@@ -68,13 +69,13 @@ class ProjectDetailsModal extends Component {
                 data-inline="false"
               ></span>
             </div>
-            <AwesomeSlider
+            {/* <AwesomeSlider
               cssModule={[AwesomeSliderStyles, AwesomeSliderStyles2]}
               animation="scaleOutAnimation"
               className="slider-image"
             >
               {img}
-            </AwesomeSlider>
+            </AwesomeSlider> */}
           </div>
           <div className="col-md-10 mx-auto">
             <h3 style={{ padding: "5px 5px 0 5px" }}>
