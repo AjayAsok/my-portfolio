@@ -8,7 +8,6 @@ const ProjectDetailsModal = (props) => {
     var description = props.data.description;
     var url = props.data.url;
     var works = props.data.works;
-    console.log(works)
     if (props.data.works) {
       var work = works.map((item, i) => {
         return (<li key={i} style={{ padding: "5px 5px 0 5px" }}>
