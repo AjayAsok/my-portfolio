@@ -1,8 +1,5 @@
 import React from "react";
 import { Modal } from "react-bootstrap";
-// import AwesomeSlider from "react-awesome-slider";
-// import AwesomeSliderStyles from "../scss/light-slider.scss";
-// import AwesomeSliderStyles2 from "../scss/dark-slider.scss";
 import "react-awesome-slider/dist/custom-animations/scale-out-animation.css";
 const ProjectDetailsModal = (props) => {
   if (props.data) {
@@ -10,6 +7,28 @@ const ProjectDetailsModal = (props) => {
     var title = props.data.title;
     var description = props.data.description;
     var url = props.data.url;
+    var works = props.data.works;
+    console.log(works)
+    if (props.data.works) {
+      var work = works.map((item, i) => {
+        return (<li key={i} style={{ padding: "5px 5px 0 5px" }}>
+          {item.title}
+          {item.url ? (
+            <a
+              href={item.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="link-href"
+            >
+              <i
+                className="fas fa-external-link-alt"
+                style={{ marginLeft: "10px" }}
+              ></i>
+            </a>
+          ) : null}
+        </li>)
+      })
+    }
     if (props.data.technologies) {
       var tech = technologies.map((icons, i) => {
         return (
@@ -79,6 +98,11 @@ const ProjectDetailsModal = (props) => {
               </a>
             ) : null}
           </h3>
+          <div className="col-md-12">
+            <ul>
+              {work}
+            </ul>
+          </div>
           <p className="modal-description">{description}</p>
           <div className="col-md-12 text-center">
             <ul className="list-inline mx-auto">{tech}</ul>

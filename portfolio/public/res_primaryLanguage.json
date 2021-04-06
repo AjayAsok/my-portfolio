@@ -86,7 +86,7 @@
       ]
     },
     {
-      "title": "Learning Projects",
+      "title": "My Work Repository",
       "startDate": "2020",
       "description": "When I am persuing my Masters, I have started learning more javascript libraries and frameworks to understand more about the latest technologies. So, as part of my learning I have developed some application by myself inorder to learn and excel my skills.",
       "images": [
@@ -94,6 +94,13 @@
         "images/portfolio/adventure/p2.jpg"
       ],
       "url": "https://github.com/AjayAsok/",
+      "works": [
+        {
+          "title": "React ToDo App",
+          "tech": "React",
+          "url": "https://todo.ajaydevportfolio.tech/"
+        }
+      ],
       "technologies": [
         {
           "class": "devicon-angularjs-plain colored",
@@ -168,9 +175,7 @@
       "mainTech": [
         ""
       ],
-      "technologies": [
-        
-      ]
+      "technologies": []
     }
   ]
 }
