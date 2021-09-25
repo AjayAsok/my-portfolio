@@ -99,6 +99,11 @@
           "title": "React ToDo App",
           "tech": "React",
           "url": "https://todo.ajaydevportfolio.tech/"
+        },
+        {
+          "title": "Firebase Google Authentication",
+          "tech": "Javascript, Google Cloud, Firebase",
+          "url": "https://trial-app-987.web.app/"
         }
       ],
       "technologies": [
@@ -135,9 +140,7 @@
       "title": "Project Engineer",
       "years": "08.2018 - 01.2020",
       "icon": "fas fa-phone-laptop experience-icon",
-      "mainTech": [
-        "Angular/ Java"
-      ],
+      "mainTech": ["Angular/ Java"],
       "technologies": [
         "Angular",
         "Java",
@@ -154,9 +157,7 @@
       "title": "Software Engineer",
       "years": "8.2015 - 08.2018",
       "icon": "fas fa-phone-laptop experience-icon",
-      "mainTech": [
-        "Angular/ Java "
-      ],
+      "mainTech": ["Angular/ Java "],
       "technologies": [
         "Angular",
         "Java",
@@ -172,9 +173,7 @@
       "title": "Bachelor of Technology in Computer Science",
       "years": "06.2011 - 07.2015",
       "icon": "fas fa-book-open experience-icon",
-      "mainTech": [
-        ""
-      ],
+      "mainTech": [""],
       "technologies": []
     }
   ]
