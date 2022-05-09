@@ -1,7 +1,7 @@
 {
   "basic_info": {
     "description_header": "Hi, I am Ajay",
-    "description": "Currently persuing Master of Business Administration program with a year-long paid placement.I have got experience with Latest front-end technologies like react, Angular and with the different Java EE frameworks like EJB, Springboot.  Here is my portfolio and you could have a look and it would be great if you could give me feedback on this as feedbacks are always awesome. Regrads,",
+    "description": "Currently working with Nexer AB, Göteborg as a consultant.I am an AWS certified developer Associate with experience in different frameworks in Java and Latest front-end technologies like React, Angular. Here is my portfolio and you could have a look at it and would appriciate if you could give me your thoughts on this as feedbacks are always awesome. Regrads,",
     "professional_desc": [
       "Full-stack Web application development (front end and back end)",
       "Agile project development methodology",
@@ -17,6 +17,38 @@
     }
   },
   "work": [
+    {
+      "title": "Nexer AB",
+      "startDate": "2022",
+      "description": "",
+      "images": [
+        "images/portfolio/logo192.png",
+        "images/portfolio/logo192.png"
+      ],
+      "url": "",
+      "technologies": [
+        {
+          "class": "devicon-angularjs-plain colored",
+          "name": "Angular"
+        },
+        {
+          "class": "devicon-java-plain colored",
+          "name": "Java"
+        },
+        {
+          "class": "devicon-typescript-plain colored",
+          "name": "TypeScript"
+        },
+        {
+          "class": "devicon-html5-plain colored",
+          "name": "HTML5"
+        },
+        {
+          "class": "devicon-bootstrap-plain colored",
+          "name": "Bootstrap"
+        }
+      ]
+    },
     {
       "title": "Allianz",
       "startDate": "2015",
@@ -128,9 +160,24 @@
   ],
   "experience": [
     {
+      "company": "Nexer AB",
+      "title": "Software Consultant",
+      "years": "02.2022 - present",
+      "icon": "fas fa-phone-laptop experience-icon",
+      "mainTech": [
+        "Java/ Cloud"
+      ],
+      "technologies": [
+        "Java",
+        "AWS",
+        "Angular",
+        "React"
+      ]
+    },
+    {
       "company": "University of Central Lancashire, Preston, United Kingdom",
       "title": "Master of Business Administration",
-      "years": "01.2020 - present",
+      "years": "01.2020 - 01.2022",
       "icon": "fas fa-book-open experience-icon",
       "mainTech": [],
       "technologies": []
@@ -140,7 +187,9 @@
       "title": "Project Engineer",
       "years": "08.2018 - 01.2020",
       "icon": "fas fa-phone-laptop experience-icon",
-      "mainTech": ["Angular/ Java"],
+      "mainTech": [
+        "Angular/ Java"
+      ],
       "technologies": [
         "Angular",
         "Java",
@@ -157,7 +206,9 @@
       "title": "Software Engineer",
       "years": "8.2015 - 08.2018",
       "icon": "fas fa-phone-laptop experience-icon",
-      "mainTech": ["Angular/ Java "],
+      "mainTech": [
+        "Angular/ Java "
+      ],
       "technologies": [
         "Angular",
         "Java",
@@ -173,7 +224,9 @@
       "title": "Bachelor of Technology in Computer Science",
       "years": "06.2011 - 07.2015",
       "icon": "fas fa-book-open experience-icon",
-      "mainTech": [""],
+      "mainTech": [
+        ""
+      ],
       "technologies": []
     }
   ]

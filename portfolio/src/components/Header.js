@@ -3,11 +3,12 @@ import Typical from "react-typical";
 
 const Header = (props) => {
   let titles = [];
-  
+
   if (props.sharedData) {
     var name = props.sharedData.name;
     titles = props.sharedData.titles.map(x => [x.toUpperCase(), 2000]).flat();
     var profilepic = "images/" + props.sharedData.image;
+    var certPic = "images/" + props.sharedData.certImage;
   }
 
   const HeaderTitleTypeAnimation = React.memo(() => {
@@ -28,11 +29,29 @@ const Header = (props) => {
             </span>
           </div>
         </div>
+        {/* <div className="col-md-3 mb-5 center">
+          <div className="polaroid">
+            <div style={{ cursor: "auto" }}>
+              <img style={{ verticalAlign: "middle" }}
+                height="150px" width="150px"
+                src={profilepic}
+                alt="Avatar placeholder"
+              />
+            </div>
+          </div>
+        </div> */}
         <div className="col-md-8">
           <div>
             <br />
             <h1 className="mb-0">
               <Typical steps={[name]} wrapper="p" />
+              <div style={{ cursor: "auto" }}>
+                <img style={{ verticalAlign: "middle" }}
+                  height="150px" width="150px"
+                  src={certPic}
+                  alt="Avatar placeholder"
+                />
+              </div>
             </h1>
             <div className="title-container">
               <HeaderTitleTypeAnimation />

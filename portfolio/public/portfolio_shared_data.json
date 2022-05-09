@@ -2,10 +2,10 @@
   "basic_info": {
     "name": "Ajay Asok",
     "titles": [
+      "Consultant",
       "Full-stack web developer",
       "Front-end Developer",
-      "Software Developer",
-      "Project Engineer"
+      "Backend Developer"
     ],
     "social": [
       {
@@ -39,7 +39,8 @@
         "class": "fas fa-code-branch"
       }
     ],
-    "image": "myProfile.jpg"
+    "image": "myProfile.jpg",
+    "certImage": "aws.png"
   },
   "skills": {
     "icons": [
