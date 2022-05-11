@@ -14,21 +14,6 @@ const Header = (props) => {
 
   const Avatar = ({ src, alt }) =>
     <Blob size="25em" src={src} alt={alt} />
-  const BackgroundBlob = ({ style, props }) =>
-    <Blob size="0.25em"
-      style={{
-        position: '',
-        top: '-15%',
-        right: '-15%',
-        zIndex: -1,
-        backgroundColor: '#21D4FD',
-        color: 'white',
-        opacity: 1,
-        fontSize: '50vh',
-        ...style
-      }}
-      {...props}
-    />
 
   const HeaderTitleTypeAnimation = React.memo(() => {
     return <Typical className="title-styles" steps={titles} loop={titles.length} />
