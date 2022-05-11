@@ -20,13 +20,17 @@
     {
       "title": "Nexer AB",
       "startDate": "2022",
-      "description": "",
+      "description": "Currently working as a Consultant in Nexer AB, Göteborg. Looking forward to explore the opportunity as best as I can ",
       "images": [
-        "images/portfolio/logo192.png",
-        "images/portfolio/logo192.png"
+        "images/portfolio/nexer/logo.png",
+        "images/portfolio/nexer/logo.png"
       ],
       "url": "",
       "technologies": [
+        {
+          "class": "devicon-amazonwebservices-plain-wordmark colored",
+          "name": "AWS"
+        },
         {
           "class": "devicon-angularjs-plain colored",
           "name": "Angular"

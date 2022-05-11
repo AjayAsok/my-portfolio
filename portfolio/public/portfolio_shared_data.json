@@ -45,6 +45,11 @@
   "skills": {
     "icons": [
       {
+        "class": "devicon-amazonwebservices-plain-wordmark",
+        "name": "Amazon Web Services",
+        "level":"95"
+      },
+      {
         "name": "Java",
         "class": "devicon-java-plain",
         "level": "65"

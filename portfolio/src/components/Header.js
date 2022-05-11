@@ -1,5 +1,6 @@
 import React from "react";
 import Typical from "react-typical";
+import { Blob } from "react-blob";
 
 const Header = (props) => {
   let titles = [];
@@ -11,6 +12,24 @@ const Header = (props) => {
     var certPic = "images/" + props.sharedData.certImage;
   }
 
+  const Avatar = ({ src, alt }) =>
+    <Blob size="25em" src={src} alt={alt} />
+  const BackgroundBlob = ({ style, props }) =>
+    <Blob size="0.25em"
+      style={{
+        position: '',
+        top: '-15%',
+        right: '-15%',
+        zIndex: -1,
+        backgroundColor: '#21D4FD',
+        color: 'white',
+        opacity: 1,
+        fontSize: '50vh',
+        ...style
+      }}
+      {...props}
+    />
+
   const HeaderTitleTypeAnimation = React.memo(() => {
     return <Typical className="title-styles" steps={titles} loop={titles.length} />
   }, (props, prevProp) => true);
@@ -21,37 +40,22 @@ const Header = (props) => {
         <div className="col-md-4 mb-5 center">
           <div className="polaroid propic">
             <span style={{ cursor: "auto" }}>
-              <img style={{ verticalAlign: "middle" }}
-                height="300px" width="500px"
-                src={profilepic}
-                alt="Avatar placeholder"
-              />
+              <Avatar src={[profilepic]} />
             </span>
           </div>
         </div>
-        {/* <div className="col-md-3 mb-5 center">
-          <div className="polaroid">
+        <div className="col-md-8">
+          <div>
             <div style={{ cursor: "auto" }}>
               <img style={{ verticalAlign: "middle" }}
                 height="150px" width="150px"
-                src={profilepic}
-                alt="Avatar placeholder"
+                src={certPic}
+                alt="Certificate"
               />
             </div>
-          </div>
-        </div> */}
-        <div className="col-md-8">
-          <div>
             <br />
             <h1 className="mb-0">
               <Typical steps={[name]} wrapper="p" />
-              <div style={{ cursor: "auto" }}>
-                <img style={{ verticalAlign: "middle" }}
-                  height="150px" width="150px"
-                  src={certPic}
-                  alt="Avatar placeholder"
-                />
-              </div>
             </h1>
             <div className="title-container">
               <HeaderTitleTypeAnimation />
